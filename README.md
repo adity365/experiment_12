@@ -14,6 +14,9 @@ A constructor that takes no arguments.
 2.	## Parametrized :
 A constructor that takes arguments to initialize an object with specific values.
 
+3. ## Copy :
+A copy constructor is a special constructor that initializes a new object as a copy of an existing object. It is invoked when a new object is created from an existing object.
+
 ## CODE
 ```
 // defining the constructor inside the class
@@ -192,6 +195,10 @@ int main() {
 ![image](https://github.com/user-attachments/assets/5d254580-5fcb-4166-a3fe-1c1bdc08823b)
 
 ![image](https://github.com/user-attachments/assets/7da3f071-d7d6-43d9-aa70-60abe6b3092d)
+
+## CONCLUSION :
+we have learned how to implement constructor inside and outside the class and how to implement default, parameterized , copy Constructor
+
 
 
 

@@ -1,4 +1,4 @@
-# experiment_12
+# Experiment_12
 To study constructors and types of constructors in Object Oriented Programming
 ## AIM: 
 Learn how to implement constructor inside and outside the class, how to implement default and parameterized Constructor

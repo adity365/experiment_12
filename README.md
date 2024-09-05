@@ -306,7 +306,7 @@ int main(){
 ![image](https://github.com/user-attachments/assets/03bc8807-9d03-47d6-a44c-8741d24f1901)
 
 ## CONCLUSION :
-we have learned how to implement constructor inside and outside the class and how to implement default, parameterized , copy Constructor
+we have learned how to implement constructor inside and outside the class and how to implement default, parameterized , copy Constructor , Destructor and how to use destructor when constructor is not present.
 
 
 

@@ -54,7 +54,7 @@ int main(){
 }
 ```
 ```
-// defining the constructor outside the class
+// defining the Constructor outside the class
 
 # include <iostream>
 using namespace std;
@@ -87,7 +87,7 @@ int main(){
 }
 ```
 ```
-// dafault constructors
+// Code for Explaination of Dafault Constructors
 
 # include<iostream>
 # include<string>
@@ -123,7 +123,7 @@ int main(){
 }
 ```
 ```
-// Parameterised Constructors
+// Code for the explaination of Parameterised Constructors
 
 # include <iostream>
 using namespace std;
@@ -300,6 +300,10 @@ int main(){
 ![image](https://github.com/user-attachments/assets/5d254580-5fcb-4166-a3fe-1c1bdc08823b)
 
 ![image](https://github.com/user-attachments/assets/7da3f071-d7d6-43d9-aa70-60abe6b3092d)
+
+![image](https://github.com/user-attachments/assets/3c5bbfea-0ce1-4047-80c6-026610a9fcfa)
+
+![image](https://github.com/user-attachments/assets/03bc8807-9d03-47d6-a44c-8741d24f1901)
 
 ## CONCLUSION :
 we have learned how to implement constructor inside and outside the class and how to implement default, parameterized , copy Constructor

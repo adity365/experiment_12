@@ -17,6 +17,9 @@ A constructor that takes arguments to initialize an object with specific values.
 3. ## Copy :
 A copy constructor is a special constructor that initializes a new object as a copy of an existing object. It is invoked when a new object is created from an existing object.
 
+4. ## Destructor :
+A destructor in C++ is a special member function of a class that is automatically called when an object goes out of scope or is explicitly deleted. Its main purpose is to release resources (like memory) that the object may have acquired during its lifetime. Destructors have the same name as the class but are preceded by a tilde (~) and take no parameters.
+
 ## CODE
 ```
 // defining the constructor inside the class
@@ -180,6 +183,108 @@ int main() {
     student manjeet(s); // copy constructor called
     manjeet.display();
 
+    return 0;
+}
+
+```
+```
+// Learned and implemented Copy Constructor 
+
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+class student {
+    int rno;
+    char name[50];
+    double fee;
+public:
+    student(int, char[], double);
+    student(student &t); // copy constructor
+    void display();
+};
+
+student::student(int no, char n[], double f) {
+    rno = no;
+    strcpy(name, n);
+    fee = f;
+}
+
+student::student(student &t) {
+    rno = t.rno;
+    strcpy(name, t.name);
+    fee = t.fee;
+}
+
+void student::display() {
+    cout << endl << rno << "\t" << name << "\t" << fee;
+}
+
+int main() {
+    student s(1001, "Manjeet", 1000);
+    s.display();
+
+    student manjeet(s); // copy constructor called
+    manjeet.display();
+
+    return 0;
+}
+
+```
+```
+// Destructor Code 
+
+# include <iostream>
+using namespace std;
+
+int count = 0;
+
+class destruct{
+    public:
+    destruct(){
+        count++;
+        cout << "No.of objects created: " << count << endl;
+    }
+    ~destruct(){
+        count --;
+        cout << "No . of objects destroyed : " << count << endl;
+    }
+};
+
+int main(){
+    destruct aa,bb,cc;
+    {
+        destruct aa,bb,cc;{
+            destruct dd;
+        }
+    }
+    return 0;
+}
+```
+```
+// Destructor Code when there does not exist any constructor 
+
+# include <iostream>
+using namespace std;
+
+int count = 0;
+
+class destruct{
+    public:
+    
+    ~destruct(){
+        count --;
+        cout << "No . of objects destroyed : " << count << endl;
+    }
+};
+
+int main(){
+    destruct aa,bb,cc;
+    {
+        destruct aa,bb,cc;{
+            destruct dd;
+        }
+    }
     return 0;
 }
 
